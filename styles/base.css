@@ -31,3 +31,57 @@ body {
 .site-header h1 {
     cursor: pointer;
 }
+
+/* Delad style för sektionsboxar (Password generator, Country code lookup, m.fl.) */
+.generator {
+    background-color: var(--surface);
+    border-radius: 16px;
+    padding: 32px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+    max-width: 400px;
+    margin: 40px auto 0;
+    text-align: center;
+}
+
+/* Delad radlayout för label + fält */
+.field-row {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+/* Delad radlayout för fält + knapp bredvid varandra */
+.result-row {
+    display: flex;
+    gap: 8px;
+    width: 100%;
+}
+
+.result-row input[type="text"] {
+    flex: 1;
+}
+
+
+/* Delad knappstil */
+.btn {
+    color: var(--text);
+    background-color: var(--surface-hover);
+    padding: 10px 15px;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    font-family: inherit;
+    font-size: 1rem;
+}
+
+.btn:hover {
+    background-color: var(--surface-active);
+}
+
+.btn:active {
+    background-color: var(--surface-active);
+    filter: brightness(1.15);
+}

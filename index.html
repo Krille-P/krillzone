@@ -77,17 +77,22 @@
 
 
 
-
-
-
-
-
-
-
+        <!-----------------CCL------------------->
 
         <section id="country-code-lookup" class="page-section">
-            <h2>Country code lookup</h2>
+            <div class="generator">
+                <h2>Country code lookup</h2>
+
+                <div class="field-row">
+                    <label for="country-search">Sök</label>
+                    <input type="text" id="country-search" placeholder="Land, riktnummer, country code">
+                </div>
+                <button id="lookup-btn" class="btn">Sök</button>
+                <div id="lookup-result"></div>
+            </div>
         </section>
+
+        <!-----------------CCL------------------->
 
         <section id="tbd" class="page-section">
             <h2>TBD</h2>
@@ -96,6 +101,7 @@
 
         <script src="scripts/nav.js"></script>
         <script src="scripts/password-generator.js"></script>
+        <script src="scripts/country-lookup.js"></script>
     </body>
 
 
