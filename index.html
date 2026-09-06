@@ -24,49 +24,56 @@
         </nav>
 
         
-        <!--Password generator-->
+
+        <!------------Password generator-------------->
+
         <section id="password-generator" class="page-section">
-            <h2>Password generator</h2>
+            <div class="generator">
+                <h2>Password generator</h2>
 
-            <label for="length">Antal tecken</label>
-            <select id="length">
-                <option value="6">6</option>
-                <option value="7">7</option>
-                <option value="8">8</option>
-                <option value="9">9</option>
-                <option value="10">10</option>
-                <option value="11">11</option>
-                <option value="12">12</option>
-                <option value="13">13</option>
-                <option value="14">14</option>
-                <option value="15">15</option>
-                <option value="16">16</option>
-            </select>
+                <div class="field-row">
+                    <label for="length">Antal tecken</label>
+                    <select id="length">
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                        <option value="10">10</option>
+                        <option value="11">11</option>
+                        <option value="12">12</option>
+                        <option value="13">13</option>
+                        <option value="14">14</option>
+                        <option value="15">15</option>
+                        <option value="16">16</option>
+                    </select>
+                </div>
 
-            <div>
-                <input type="checkbox" id="include-numbers" checked>
-                <label for="include-numbers">Siffror</label>
-            </div>
+                <div class="checkbox-group">
+                    <div class="checkbox-row">
+                        <input type="checkbox" id="include-numbers" checked>
+                        <label for="include-numbers">Siffror</label>
+                    </div>
+                    <div class="checkbox-row">
+                        <input type="checkbox" id="include-letters" checked>
+                        <label for="include-letters">Stora/små bokstäver</label>
+                    </div>
+                    <div class="checkbox-row">
+                        <input type="checkbox" id="include-symbols" checked>
+                        <label for="include-symbols">Symboler</label>
+                    </div>
+                </div>
 
-            <div>
-                <input type="checkbox" id="include-letters" checked>
-                <label for="include-letters">Stora/små bokstäver</label>
-            </div>
+                <!--generera knapp & copy-->
+                <button id="generate-btn" class="btn">Generera lösenord</button>
 
-            <div>
-                <input type="checkbox" id="include-symbols" checked>
-                <label for="include-symbols">Symboler</label>
-            </div>
-
-            <!--generera knapp & copy-->
-            <button id="generate-btn">Generera lösenord</button>
-
-            <div class="result-row">
-                <input type="text" id="result" readonly>
-                <button id="copy-btn">Kopiera</button>
+                <div class="result-row">
+                    <input type="text" id="result" readonly>
+                    <button id="copy-btn" class="btn">Kopiera</button>
+                </div>
             </div>
         </section>
-        <!--Password generator-->
+
+        <!------------Password generator-------------->
 
 
 
