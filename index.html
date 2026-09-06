@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="sv">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!--links till style.css-->
+        <link rel="stylesheet" href="style.css">
+        <title>Krillzone</title>
+    </head>
+
+
+
+    <body>
+        <header class="site-header">
+            <h1>Krillzone</h1>
+        </header>
+
+        <nav class="main-nav">
+            <a href="#password-generator">Password generator</a>
+            <a href="#country-code-lookup">Country code lookup</a>
+            <a href="#tbd">TBD</a>
+        </nav>
+
+        
+        <!--Password generator-->
+        <section id="password-generator" class="page-section">
+            <h2>Password generator</h2>
+
+            <label for="length">Antal tecken</label>
+            <select id="length">
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+                <option value="11">11</option>
+                <option value="12">12</option>
+                <option value="13">13</option>
+                <option value="14">14</option>
+                <option value="15">15</option>
+                <option value="16">16</option>
+            </select>
+
+            <div>
+                <input type="checkbox" id="include-numbers" checked>
+                <label for="include-numbers">Siffror</label>
+            </div>
+
+            <div>
+                <input type="checkbox" id="include-letters" checked>
+                <label for="include-letters">Stora/små bokstäver</label>
+            </div>
+
+            <div>
+                <input type="checkbox" id="include-symbols" checked>
+                <label for="include-symbols">Symboler</label>
+            </div>
+
+            <!--generera knapp & copy-->
+            <button id="generate-btn">Generera lösenord</button>
+
+            <div class="result-row">
+                <input type="text" id="result" readonly>
+                <button id="copy-btn">Kopiera</button>
+            </div>
+        </section>
+        <!--Password generator-->
+
+
+
+
+
+
+
+
+
+
+
+        <section id="country-code-lookup" class="page-section">
+            <h2>Country code lookup</h2>
+        </section>
+
+        <section id="tbd" class="page-section">
+            <h2>TBD</h2>
+        </section>
+
+
+        <script src="script.js"></script>
+    </body>
+
+
+
+
+
+</html>

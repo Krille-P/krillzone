@@ -1,0 +1,54 @@
+/* Bakgrundsfärgen för hela sidan, textfärg & font */
+body {
+    background-color:#18181b;
+    color:#e8e8e8;
+    font-family:"Segoe UI", sans-serif;
+}
+
+/* Centrerar <h1> */
+.site-header {
+    text-align: center;
+    padding-top: 3%;
+}
+
+
+.main-nav {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+    padding: 20px 0;
+    border-top: 1px solid #3f3f46;
+    border-bottom: 1px solid #3f3f46;
+    background-color: rgba(255, 255, 255, 0.04);
+}
+
+
+
+/* knapparna */
+.main-nav a {
+    text-decoration: none;
+    color: #e8e8e8;
+    background-color: #3f3f46;
+    padding: 10px 15px;
+    border-radius: 25px;
+}
+
+.main-nav a:hover {
+    background-color: #52525b;
+}
+.main-nav a:active {
+    background-color: #71717a;
+}
+
+
+
+
+
+
+/* Visa/dölj baserat på ett klick med js */
+.page-section {
+    display: none;
+}
+.page-section.active {
+    display: block;
+}
