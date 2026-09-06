@@ -28,3 +28,6 @@ body {
     text-align: center;
     padding-top: 0%;
 }
+.site-header h1 {
+    cursor: pointer;
+}
