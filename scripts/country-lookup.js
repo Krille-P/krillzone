@@ -31,7 +31,7 @@ const countries = [
     { name: "Malaysia", code: "MY", callingCode: "60", currency: "MYR" }
 ]
 
-lookupBtn.addEventListener("click", function () {
+function performSearch() {
     const query = searchInput.value.trim().toLowerCase();
 
     const match = countries.find(function (country) {
@@ -41,9 +41,22 @@ lookupBtn.addEventListener("click", function () {
     });
 
     if (match) {
-        resultDiv.textContent = match.name + " (" + match.code + ") +" + match.callingCode + ", " + match.currency;
+        resultDiv.innerHTML = `
+            <div class="lookup-name">${match.name}</div>
+            <div class="lookup-row">Kod: ${match.code}</div>
+            <div class="lookup-row">Riktnummer: +${match.callingCode}</div>
+            <div class="lookup-row">Valuta: ${match.currency}</div>
+        `;
     } else {
-        resultDiv.textContent = "Hittade inget land som matchar.";
+        resultDiv.innerHTML = `<div class="lookup-row">Hittade inget land som matchar.</div>`;
+    }
+}
+
+lookupBtn.addEventListener("click", performSearch);
+
+searchInput.addEventListener("keydown", function (event) {
+    if (event.key === "Enter") {
+        performSearch();
     }
 
 });
