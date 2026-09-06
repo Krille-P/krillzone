@@ -1,0 +1,12 @@
+/* Bakgrundsfärgen för hela sidan, textfärg & font */
+body {
+    background-color:#18181b;
+    color:#e8e8e8;
+    font-family:"Segoe UI", sans-serif;
+}
+
+/* Centrerar <h1> */
+.site-header {
+    text-align: center;
+    padding-top: 3%;
+}
