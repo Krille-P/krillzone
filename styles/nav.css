@@ -3,26 +3,27 @@
     justify-content: center;
     gap: 24px;
     padding: 20px 0;
-    border-top: 1px solid #3f3f46;
-    border-bottom: 1px solid #3f3f46;
+    border-top: 1px solid var(--surface);
+    border-bottom: 1px solid var(--surface);
     background-color: rgba(255, 255, 255, 0.04);
 }
 
 /* knapparna */
 .main-nav a {
     text-decoration: none;
-    color: #e8e8e8;
-    background-color: #3f3f46;
+    color: var(--text);
+    background-color: var(--surface);
     padding: 10px 15px;
     border-radius: 25px;
 }
 
 .main-nav a:hover {
-    background-color: #52525b;
+    background-color: var(--surface-hover);
 }
 .main-nav a:active {
-    background-color: #71717a;
+    background-color: var(--surface-active);
 }
+
 
 /* Visa/dölj baserat på ett klick med js */
 .page-section {
