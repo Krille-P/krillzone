@@ -18,9 +18,13 @@
 
 /* Bakgrundsfärgen för hela sidan, textfärg & font */
 body {
+    margin: 0;
     background-color:var(--bg);
     color: var(--text);
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
 /* Centrerar <h1> */
@@ -75,6 +79,7 @@ body {
     cursor: pointer;
     font-family: inherit;
     font-size: 1rem;
+    text-decoration: none;
 }
 
 .btn:hover {
@@ -84,4 +89,48 @@ body {
 .btn:active {
     background-color: var(--surface-active);
     filter: brightness(1.15);
+}
+
+.btn-primary {
+    background-color: var(--accent-strong);
+    color: var(--bg);
+    font-weight: 600;
+}
+.btn-primary:hover {
+    background-color: var(--accent);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.site-footer {
+    text-align: center;
+    padding: 24px 20px;
+    margin-top: auto;
+    border-top: 1px solid var(--surface);
+    color: var(--text);
+    opacity: 0.3;
+    font-size: 0.65rem;
+}
+.site-footer p {
+    max-width: 700px;
+    margin: 0 auto;
 }

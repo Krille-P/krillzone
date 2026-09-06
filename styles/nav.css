@@ -28,6 +28,7 @@
 /* Visa/dölj baserat på ett klick med js */
 .page-section {
     display: none;
+    text-align: center;
 }
 .page-section.active {
     display: block;

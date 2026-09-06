@@ -8,9 +8,11 @@
         <link rel="stylesheet" href="styles/nav.css">
         <link rel="stylesheet" href="styles/password-generator.css">
         <link rel="stylesheet" href="styles/country-lookup.css">
+        <link rel="stylesheet" href="styles/company-lookup.css">
+
 
         <title>Krillzone</title>
-        
+
     </head>
 
 
@@ -23,7 +25,7 @@
         <nav class="main-nav">
             <a href="#password-generator">Password generator</a>
             <a href="#country-code-lookup">Country code lookup</a>
-            <a href="#tbd">TBD</a>
+            <a href="#company-lookup">Company lookup</a>
         </nav>
 
         
@@ -67,7 +69,7 @@
                 </div>
 
                 <!--generera knapp & copy-->
-                <button id="generate-btn" class="btn">Generera lösenord</button>
+                <button id="generate-btn" class="btn btn-primary">Generera lösenord</button>
 
                 <div class="result-row">
                     <input type="text" id="result" readonly>
@@ -97,9 +99,41 @@
 
         <!-----------------CCL------------------->
 
-        <section id="tbd" class="page-section">
-            <h2>TBD</h2>
+
+        
+        <!-----------------CompanyLookup------------------->
+
+        <section id="company-lookup" class="page-section">
+            <h2>Company lookup</h2>
+        
+        <div class="lookup-links">
+            <div class="generator">
+                <h3>Peppol</h3>
+                <a class="btn btn-primary" href="https://my.galaxygw.com/participantlookup" target="_blank" rel="noopener noreferrer">Öppna peppol-sökning</a>
+            </div>
+            <div class="generator">
+                <h3>Verkkolaskuosoite</h3>
+                <a class="btn btn-primary" href="https://verkkolaskuosoite.fi/client" target="_blank" rel="noopener noreferrer">Öppna Verkkolaskuosoite</a>
+            </div>
+            
+            <div class="generator">
+                <h3>Nemhandel</h3>
+                <a class="btn btn-primary" href="https://registration.nemhandel.dk/NemHandelRegisterWeb/public/participant/info" target="_blank" rel="noopener noreferrer">Öppna Nemhandel</a>
+            </div>
+        </div>
+
+            <div class="generator">
+                <h3>NEA eRegister</h3>
+                <iframe src="https://eregister.nea.nu/nea/" width="100%" height="500"></iframe>
+            </div>
         </section>
+
+        <!-----------------CompanyLookup------------------->
+
+
+        <footer class="site-footer">
+                <p>Company lookup innehåller inbäddat innehåll och länkar till tredjepartstjänster (NEA eRegister, Tickstar, Verkkolaskuosoite, Nemhandel) som inte drivs av eller är anslutna till Krillzone. Krillzone ansvarar inte för dessa tjänsters innehåll, tillgänglighet eller datakorrekthet. Tredjepartsinnehåll kan sätta egna cookies enligt sina egna villkor.</p>
+        </footer>
 
 
         <script src="scripts/nav.js"></script>

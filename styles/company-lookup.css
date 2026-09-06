@@ -1,0 +1,14 @@
+#company-lookup > .generator {
+    max-width: 850px;
+}
+
+.lookup-links {
+    display: flex;
+    gap: 16px;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.lookup-links .generator {
+    flex: 1;
+}
